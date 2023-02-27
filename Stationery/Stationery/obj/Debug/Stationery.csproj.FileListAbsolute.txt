@@ -1,0 +1,162 @@
+C:\Users\rizen7\source\repos\Stationery\Stationery\bin\Debug\Stationery.exe.config
+C:\Users\rizen7\source\repos\Stationery\Stationery\bin\Debug\Stationery.exe
+C:\Users\rizen7\source\repos\Stationery\Stationery\bin\Debug\Stationery.pdb
+C:\Users\rizen7\source\repos\Stationery\Stationery\obj\Debug\Stationery.csproj.AssemblyReference.cache
+C:\Users\rizen7\source\repos\Stationery\Stationery\obj\Debug\Stationery.csproj.SuggestedBindingRedirects.cache
+C:\Users\rizen7\source\repos\Stationery\Stationery\obj\Debug\MainWindow.g.cs
+C:\Users\rizen7\source\repos\Stationery\Stationery\obj\Debug\App.g.cs
+C:\Users\rizen7\source\repos\Stationery\Stationery\obj\Debug\Stationery_MarkupCompile.cache
+C:\Users\rizen7\source\repos\Stationery\Stationery\obj\Debug\Stationery_MarkupCompile.lref
+C:\Users\rizen7\source\repos\Stationery\Stationery\obj\Debug\App.baml
+C:\Users\rizen7\source\repos\Stationery\Stationery\obj\Debug\MainWindow.baml
+C:\Users\rizen7\source\repos\Stationery\Stationery\obj\Debug\Stationery.g.resources
+C:\Users\rizen7\source\repos\Stationery\Stationery\obj\Debug\Stationery.Properties.Resources.resources
+C:\Users\rizen7\source\repos\Stationery\Stationery\obj\Debug\Stationery.csproj.GenerateResource.cache
+C:\Users\rizen7\source\repos\Stationery\Stationery\obj\Debug\Stationery.csproj.CoreCompileInputs.cache
+C:\Users\rizen7\source\repos\Stationery\Stationery\obj\Debug\Stationery.exe
+C:\Users\rizen7\source\repos\Stationery\Stationery\obj\Debug\Stationery.pdb
+C:\Users\rizen7\source\repos\Stationery\Stationery\obj\Debug\Login.g.cs
+C:\Users\rizen7\source\repos\Stationery\Stationery\obj\Debug\Login.baml
+C:\Users\rizen7\source\repos\Stationery\Stationery\obj\Debug\Signin.g.cs
+C:\Users\rizen7\source\repos\Stationery\Stationery\obj\Debug\Signin.baml
+C:\Users\rizen7\source\repos\Stationery\Stationery\bin\Debug\EntityFramework.dll
+C:\Users\rizen7\source\repos\Stationery\Stationery\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\rizen7\source\repos\Stationery\Stationery\bin\Debug\EntityFramework.xml
+C:\Users\rizen7\source\repos\Stationery\Stationery\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\rizen7\source\repos\Stationery\Stationery\obj\Debug\Shop.g.cs
+C:\Users\rizen7\source\repos\Stationery\Stationery\obj\Debug\Stationery_Content.g.cs
+C:\Users\rizen7\source\repos\Stationery\Stationery\obj\Debug\Shop.baml
+C:\Users\rizen7\source\repos\Stationery\Stationery\obj\Debug\Stationery.csproj.CopyComplete
+C:\Users\rizen7\source\repos\Stationery\Stationery\obj\Debug\Img.g.cs
+C:\Users\rizen7\source\repos\Stationery\Stationery\obj\Debug\Img.baml
+C:\Users\rizen7\source\repos\Stationery\Stationery\obj\Debug\Profile.g.cs
+C:\Users\rizen7\source\repos\Stationery\Stationery\obj\Debug\Profile.baml
+C:\Users\rizen7\source\repos\Stationery\Stationery\obj\Debug\Basket.g.cs
+C:\Users\rizen7\source\repos\Stationery\Stationery\obj\Debug\Basket.baml
+C:\Users\rizen7\source\repos\Stationery\Stationery\obj\Debug\AddEditGoods.g.cs
+C:\Users\rizen7\source\repos\Stationery\Stationery\obj\Debug\For_admin.g.cs
+C:\Users\rizen7\source\repos\Stationery\Stationery\obj\Debug\AddEditGoods.baml
+C:\Users\rizen7\source\repos\Stationery\Stationery\obj\Debug\For_admin.baml
+C:\Users\elina\Desktop\Stationery\Stationery\obj\Debug\AddEditGoods.g.cs
+C:\Users\elina\Desktop\Stationery\Stationery\obj\Debug\Basket.g.cs
+C:\Users\elina\Desktop\Stationery\Stationery\obj\Debug\For_admin.g.cs
+C:\Users\elina\Desktop\Stationery\Stationery\obj\Debug\Img.g.cs
+C:\Users\elina\Desktop\Stationery\Stationery\obj\Debug\Login.g.cs
+C:\Users\elina\Desktop\Stationery\Stationery\obj\Debug\MainWindow.g.cs
+C:\Users\elina\Desktop\Stationery\Stationery\obj\Debug\Profile.g.cs
+C:\Users\elina\Desktop\Stationery\Stationery\obj\Debug\Shop.g.cs
+C:\Users\elina\Desktop\Stationery\Stationery\obj\Debug\Signin.g.cs
+C:\Users\elina\Desktop\Stationery\Stationery\obj\Debug\App.g.cs
+C:\Users\elina\Desktop\Stationery\Stationery\obj\Debug\Stationery_Content.g.cs
+C:\Users\elina\Desktop\Stationery\Stationery\obj\Debug\Stationery_MarkupCompile.cache
+C:\Users\elina\Desktop\Stationery\Stationery\obj\Debug\Stationery_MarkupCompile.lref
+C:\Users\elina\Desktop\Stationery\Stationery\obj\Debug\Stationery.exe
+C:\Users\elina\Desktop\Stationery\Stationery\obj\Debug\Stationery.pdb
+C:\Users\elina\Desktop\Stationery\Stationery\bin\Debug\Stationery.exe.config
+C:\Users\elina\Desktop\Stationery\Stationery\bin\Debug\Stationery.exe
+C:\Users\elina\Desktop\Stationery\Stationery\bin\Debug\Stationery.pdb
+C:\Users\elina\Desktop\Stationery\Stationery\bin\Debug\EntityFramework.dll
+C:\Users\elina\Desktop\Stationery\Stationery\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\elina\Desktop\Stationery\Stationery\bin\Debug\EntityFramework.xml
+C:\Users\elina\Desktop\Stationery\Stationery\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\elina\Desktop\Stationery\Stationery\obj\Debug\App.baml
+C:\Users\elina\Desktop\Stationery\Stationery\obj\Debug\AddEditGoods.baml
+C:\Users\elina\Desktop\Stationery\Stationery\obj\Debug\Basket.baml
+C:\Users\elina\Desktop\Stationery\Stationery\obj\Debug\For_admin.baml
+C:\Users\elina\Desktop\Stationery\Stationery\obj\Debug\Img.baml
+C:\Users\elina\Desktop\Stationery\Stationery\obj\Debug\Login.baml
+C:\Users\elina\Desktop\Stationery\Stationery\obj\Debug\MainWindow.baml
+C:\Users\elina\Desktop\Stationery\Stationery\obj\Debug\Profile.baml
+C:\Users\elina\Desktop\Stationery\Stationery\obj\Debug\Shop.baml
+C:\Users\elina\Desktop\Stationery\Stationery\obj\Debug\Signin.baml
+C:\Users\elina\Desktop\Stationery\Stationery\obj\Debug\Stationery.g.resources
+C:\Users\elina\Desktop\Stationery\Stationery\obj\Debug\Stationery.Properties.Resources.resources
+C:\Users\elina\Desktop\Stationery\Stationery\obj\Debug\Stationery.csproj.GenerateResource.cache
+C:\Users\elina\Desktop\Stationery\Stationery\obj\Debug\Stationery.csproj.CoreCompileInputs.cache
+C:\Users\elina\Desktop\Stationery\Stationery\obj\Debug\Stationery.csproj.CopyComplete
+C:\Users\elina\Desktop\Stationery\Stationery\obj\Debug\Stationery.csproj.AssemblyReference.cache
+C:\Users\timon\OneDrive\Desktop\Stationery\Stationery\bin\Debug\Stationery.exe.config
+C:\Users\timon\OneDrive\Desktop\Stationery\Stationery\bin\Debug\Stationery.exe
+C:\Users\timon\OneDrive\Desktop\Stationery\Stationery\bin\Debug\Stationery.pdb
+C:\Users\timon\OneDrive\Desktop\Stationery\Stationery\bin\Debug\EntityFramework.dll
+C:\Users\timon\OneDrive\Desktop\Stationery\Stationery\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\timon\OneDrive\Desktop\Stationery\Stationery\bin\Debug\System.Data.SQLite.dll
+C:\Users\timon\OneDrive\Desktop\Stationery\Stationery\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\timon\OneDrive\Desktop\Stationery\Stationery\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\timon\OneDrive\Desktop\Stationery\Stationery\bin\Debug\EntityFramework.xml
+C:\Users\timon\OneDrive\Desktop\Stationery\Stationery\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\timon\OneDrive\Desktop\Stationery\Stationery\bin\Debug\System.Data.SQLite.xml
+C:\Users\timon\OneDrive\Desktop\Stationery\Stationery\obj\Debug\Stationery.csproj.AssemblyReference.cache
+C:\Users\timon\OneDrive\Desktop\Stationery\Stationery\obj\Debug\Stationery.csproj.SuggestedBindingRedirects.cache
+C:\Users\timon\OneDrive\Desktop\Stationery\Stationery\obj\Debug\AddEditGoods.g.cs
+C:\Users\timon\OneDrive\Desktop\Stationery\Stationery\obj\Debug\Basket.g.cs
+C:\Users\timon\OneDrive\Desktop\Stationery\Stationery\obj\Debug\For_admin.g.cs
+C:\Users\timon\OneDrive\Desktop\Stationery\Stationery\obj\Debug\Img.g.cs
+C:\Users\timon\OneDrive\Desktop\Stationery\Stationery\obj\Debug\Login.g.cs
+C:\Users\timon\OneDrive\Desktop\Stationery\Stationery\obj\Debug\MainWindow.g.cs
+C:\Users\timon\OneDrive\Desktop\Stationery\Stationery\obj\Debug\Profile.g.cs
+C:\Users\timon\OneDrive\Desktop\Stationery\Stationery\obj\Debug\Shop.g.cs
+C:\Users\timon\OneDrive\Desktop\Stationery\Stationery\obj\Debug\Signin.g.cs
+C:\Users\timon\OneDrive\Desktop\Stationery\Stationery\obj\Debug\App.g.cs
+C:\Users\timon\OneDrive\Desktop\Stationery\Stationery\obj\Debug\Stationery_MarkupCompile.cache
+C:\Users\timon\OneDrive\Desktop\Stationery\Stationery\obj\Debug\Stationery_MarkupCompile.lref
+C:\Users\timon\OneDrive\Desktop\Stationery\Stationery\obj\Debug\App.baml
+C:\Users\timon\OneDrive\Desktop\Stationery\Stationery\obj\Debug\AddEditGoods.baml
+C:\Users\timon\OneDrive\Desktop\Stationery\Stationery\obj\Debug\Basket.baml
+C:\Users\timon\OneDrive\Desktop\Stationery\Stationery\obj\Debug\For_admin.baml
+C:\Users\timon\OneDrive\Desktop\Stationery\Stationery\obj\Debug\Img.baml
+C:\Users\timon\OneDrive\Desktop\Stationery\Stationery\obj\Debug\Login.baml
+C:\Users\timon\OneDrive\Desktop\Stationery\Stationery\obj\Debug\MainWindow.baml
+C:\Users\timon\OneDrive\Desktop\Stationery\Stationery\obj\Debug\Profile.baml
+C:\Users\timon\OneDrive\Desktop\Stationery\Stationery\obj\Debug\Shop.baml
+C:\Users\timon\OneDrive\Desktop\Stationery\Stationery\obj\Debug\Signin.baml
+C:\Users\timon\OneDrive\Desktop\Stationery\Stationery\obj\Debug\Stationery.g.resources
+C:\Users\timon\OneDrive\Desktop\Stationery\Stationery\obj\Debug\Stationery.Properties.Resources.resources
+C:\Users\timon\OneDrive\Desktop\Stationery\Stationery\obj\Debug\Stationery.csproj.GenerateResource.cache
+C:\Users\timon\OneDrive\Desktop\Stationery\Stationery\obj\Debug\Stationery.csproj.CoreCompileInputs.cache
+C:\Users\timon\OneDrive\Desktop\Stationery\Stationery\obj\Debug\Stationery.csproj.CopyComplete
+C:\Users\timon\OneDrive\Desktop\Stationery\Stationery\obj\Debug\Stationery.exe
+C:\Users\timon\OneDrive\Desktop\Stationery\Stationery\obj\Debug\Stationery.pdb
+D:\STUDY\4 курс\Курсовая для лучшей милашки\Stationery\Stationery\bin\Debug\Stationery.exe.config
+D:\STUDY\4 курс\Курсовая для лучшей милашки\Stationery\Stationery\bin\Debug\Stationery.exe
+D:\STUDY\4 курс\Курсовая для лучшей милашки\Stationery\Stationery\bin\Debug\Stationery.pdb
+D:\STUDY\4 курс\Курсовая для лучшей милашки\Stationery\Stationery\bin\Debug\EntityFramework.dll
+D:\STUDY\4 курс\Курсовая для лучшей милашки\Stationery\Stationery\bin\Debug\EntityFramework.SqlServer.dll
+D:\STUDY\4 курс\Курсовая для лучшей милашки\Stationery\Stationery\bin\Debug\System.Data.SQLite.dll
+D:\STUDY\4 курс\Курсовая для лучшей милашки\Stationery\Stationery\bin\Debug\System.Data.SQLite.EF6.dll
+D:\STUDY\4 курс\Курсовая для лучшей милашки\Stationery\Stationery\bin\Debug\System.Data.SQLite.Linq.dll
+D:\STUDY\4 курс\Курсовая для лучшей милашки\Stationery\Stationery\bin\Debug\EntityFramework.xml
+D:\STUDY\4 курс\Курсовая для лучшей милашки\Stationery\Stationery\bin\Debug\EntityFramework.SqlServer.xml
+D:\STUDY\4 курс\Курсовая для лучшей милашки\Stationery\Stationery\bin\Debug\System.Data.SQLite.xml
+D:\STUDY\4 курс\Курсовая для лучшей милашки\Stationery\Stationery\obj\Debug\Stationery.csproj.AssemblyReference.cache
+D:\STUDY\4 курс\Курсовая для лучшей милашки\Stationery\Stationery\obj\Debug\AddEditGoods.g.cs
+D:\STUDY\4 курс\Курсовая для лучшей милашки\Stationery\Stationery\obj\Debug\Basket.g.cs
+D:\STUDY\4 курс\Курсовая для лучшей милашки\Stationery\Stationery\obj\Debug\For_admin.g.cs
+D:\STUDY\4 курс\Курсовая для лучшей милашки\Stationery\Stationery\obj\Debug\Img.g.cs
+D:\STUDY\4 курс\Курсовая для лучшей милашки\Stationery\Stationery\obj\Debug\Login.g.cs
+D:\STUDY\4 курс\Курсовая для лучшей милашки\Stationery\Stationery\obj\Debug\MainWindow.g.cs
+D:\STUDY\4 курс\Курсовая для лучшей милашки\Stationery\Stationery\obj\Debug\Profile.g.cs
+D:\STUDY\4 курс\Курсовая для лучшей милашки\Stationery\Stationery\obj\Debug\Shop.g.cs
+D:\STUDY\4 курс\Курсовая для лучшей милашки\Stationery\Stationery\obj\Debug\Signin.g.cs
+D:\STUDY\4 курс\Курсовая для лучшей милашки\Stationery\Stationery\obj\Debug\App.g.cs
+D:\STUDY\4 курс\Курсовая для лучшей милашки\Stationery\Stationery\obj\Debug\Stationery_MarkupCompile.cache
+D:\STUDY\4 курс\Курсовая для лучшей милашки\Stationery\Stationery\obj\Debug\Stationery_MarkupCompile.lref
+D:\STUDY\4 курс\Курсовая для лучшей милашки\Stationery\Stationery\obj\Debug\App.baml
+D:\STUDY\4 курс\Курсовая для лучшей милашки\Stationery\Stationery\obj\Debug\AddEditGoods.baml
+D:\STUDY\4 курс\Курсовая для лучшей милашки\Stationery\Stationery\obj\Debug\Basket.baml
+D:\STUDY\4 курс\Курсовая для лучшей милашки\Stationery\Stationery\obj\Debug\For_admin.baml
+D:\STUDY\4 курс\Курсовая для лучшей милашки\Stationery\Stationery\obj\Debug\Img.baml
+D:\STUDY\4 курс\Курсовая для лучшей милашки\Stationery\Stationery\obj\Debug\Login.baml
+D:\STUDY\4 курс\Курсовая для лучшей милашки\Stationery\Stationery\obj\Debug\MainWindow.baml
+D:\STUDY\4 курс\Курсовая для лучшей милашки\Stationery\Stationery\obj\Debug\Profile.baml
+D:\STUDY\4 курс\Курсовая для лучшей милашки\Stationery\Stationery\obj\Debug\Shop.baml
+D:\STUDY\4 курс\Курсовая для лучшей милашки\Stationery\Stationery\obj\Debug\Signin.baml
+D:\STUDY\4 курс\Курсовая для лучшей милашки\Stationery\Stationery\obj\Debug\Stationery.g.resources
+D:\STUDY\4 курс\Курсовая для лучшей милашки\Stationery\Stationery\obj\Debug\Stationery.Properties.Resources.resources
+D:\STUDY\4 курс\Курсовая для лучшей милашки\Stationery\Stationery\obj\Debug\Stationery.csproj.GenerateResource.cache
+D:\STUDY\4 курс\Курсовая для лучшей милашки\Stationery\Stationery\obj\Debug\Stationery.csproj.CoreCompileInputs.cache
+D:\STUDY\4 курс\Курсовая для лучшей милашки\Stationery\Stationery\obj\Debug\Stationery.csproj.CopyComplete
+D:\STUDY\4 курс\Курсовая для лучшей милашки\Stationery\Stationery\obj\Debug\Stationery.exe
+D:\STUDY\4 курс\Курсовая для лучшей милашки\Stationery\Stationery\obj\Debug\Stationery.pdb
+C:\Users\ASUS\source\repos\Review\Kursach\Stationery\Stationery\obj\Debug\Stationery.exe
+C:\Users\ASUS\source\repos\Review\Kursach\Stationery\Stationery\obj\Debug\Stationery.pdb

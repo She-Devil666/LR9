@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="stationeryModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="basket">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_buyer" Type="Int32" Nullable="false" />
+    <Property Name="id_good" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="buyer" Relationship="Self.FK_basket_buyer" FromRole="basket" ToRole="buyer" />
+    <NavigationProperty Name="good" Relationship="Self.FK_basket_good" FromRole="basket" ToRole="good" />
+  </EntityType>
+  <EntityType Name="buyer">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_user" Type="Int32" Nullable="false" />
+    <Property Name="surname" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="phone" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="email" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="baskets" Relationship="Self.FK_basket_buyer" FromRole="buyer" ToRole="basket" />
+    <NavigationProperty Name="user" Relationship="Self.FK_buyer_user" FromRole="buyer" ToRole="user" />
+    <NavigationProperty Name="orders" Relationship="Self.FK_order_buyer" FromRole="buyer" ToRole="order" />
+  </EntityType>
+  <EntityType Name="good">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="SKU" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="price" Type="Int32" Nullable="false" />
+    <Property Name="count" Type="Int32" Nullable="false" />
+    <Property Name="img" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <NavigationProperty Name="baskets" Relationship="Self.FK_basket_good" FromRole="good" ToRole="basket" />
+    <NavigationProperty Name="orders" Relationship="Self.FK_order_good" FromRole="good" ToRole="order" />
+  </EntityType>
+  <EntityType Name="order">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_buyer" Type="Int32" Nullable="false" />
+    <Property Name="id_good" Type="Int32" Nullable="false" />
+    <Property Name="code" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="buyer" Relationship="Self.FK_order_buyer" FromRole="order" ToRole="buyer" />
+    <NavigationProperty Name="good" Relationship="Self.FK_order_good" FromRole="order" ToRole="good" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="user">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="login" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="password" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="role" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="buyers" Relationship="Self.FK_buyer_user" FromRole="user" ToRole="buyer" />
+  </EntityType>
+  <Association Name="FK_basket_buyer">
+    <End Role="buyer" Type="Self.buyer" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="basket" Type="Self.basket" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="buyer">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="basket">
+        <PropertyRef Name="id_buyer" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_basket_good">
+    <End Role="good" Type="Self.good" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="basket" Type="Self.basket" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="good">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="basket">
+        <PropertyRef Name="id_good" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_buyer_user">
+    <End Role="user" Type="Self.user" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="buyer" Type="Self.buyer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="user">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="buyer">
+        <PropertyRef Name="id_user" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_order_buyer">
+    <End Role="buyer" Type="Self.buyer" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="order" Type="Self.order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="buyer">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="order">
+        <PropertyRef Name="id_buyer" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_order_good">
+    <End Role="good" Type="Self.good" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="order" Type="Self.order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="good">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="order">
+        <PropertyRef Name="id_good" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="stationeryEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="baskets" EntityType="Self.basket" />
+    <EntitySet Name="buyers" EntityType="Self.buyer" />
+    <EntitySet Name="goods" EntityType="Self.good" />
+    <EntitySet Name="orders" EntityType="Self.order" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+    <EntitySet Name="users" EntityType="Self.user" />
+    <AssociationSet Name="FK_basket_buyer" Association="Self.FK_basket_buyer">
+      <End Role="buyer" EntitySet="buyers" />
+      <End Role="basket" EntitySet="baskets" />
+    </AssociationSet>
+    <AssociationSet Name="FK_basket_good" Association="Self.FK_basket_good">
+      <End Role="good" EntitySet="goods" />
+      <End Role="basket" EntitySet="baskets" />
+    </AssociationSet>
+    <AssociationSet Name="FK_buyer_user" Association="Self.FK_buyer_user">
+      <End Role="user" EntitySet="users" />
+      <End Role="buyer" EntitySet="buyers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_order_buyer" Association="Self.FK_order_buyer">
+      <End Role="buyer" EntitySet="buyers" />
+      <End Role="order" EntitySet="orders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_order_good" Association="Self.FK_order_good">
+      <End Role="good" EntitySet="goods" />
+      <End Role="order" EntitySet="orders" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

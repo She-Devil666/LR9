@@ -1,0 +1,37 @@
+﻿<Window x:Class="Stationery.AddEditGoods"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Stationery"
+        mc:Ignorable="d"
+        Title="Редактирование товара" Height="800" Width="450" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"></RowDefinition>
+            <RowDefinition Height="70"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center">
+            <StackPanel Orientation="Horizontal" Height="50">
+                <TextBlock Text="ZAKKA" Style="{StaticResource logo_style}" VerticalAlignment="Center"></TextBlock>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1">
+            <TextBlock Text="Добавление, изменение товаров" Style="{StaticResource headline_style}" FontWeight="Light"></TextBlock>
+            <Button x:Name="btn_back" Content="Назад" Click="btn_back_Click" Style="{StaticResource nav_link_style}" HorizontalAlignment="Center"></Button>
+        </StackPanel>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2">
+            <TextBlock Text="Наименование" Style="{StaticResource text_style}" Margin="0 0 0 10"></TextBlock>
+            <TextBox x:Name="tbox_name" Text="{Binding name}" Style="{StaticResource text_field_style}" Width="250" Height="30" Margin="0 0 0 20"></TextBox>
+            <TextBlock Text="Кол-во" Style="{StaticResource text_style}" Margin="0 0 0 10"></TextBlock>
+            <TextBox x:Name="tbox_count" Text="{Binding count}" Style="{StaticResource text_field_style}" Width="250" Height="30" Margin="0 0 0 20"></TextBox>
+            <TextBlock Text="Артикул" Style="{StaticResource text_style}" Margin="0 0 0 10"></TextBlock>
+            <TextBox x:Name="tbox_sku" Text="{Binding SKU}" Style="{StaticResource text_field_style}" Width="250" Height="30" Margin="0 0 0 20"></TextBox>
+            <TextBlock Text="Цена" Style="{StaticResource text_style}" Margin="0 0 0 10"></TextBlock>
+            <TextBox x:Name="tbox_price" Text="{Binding price}" Style="{StaticResource text_field_style}" Width="250" Height="30" Margin="0 0 0 20"></TextBox>
+            <Button x:Name="btn_img" Width="250" Height="30" Click="btn_img_Click" Content="Добавить фото" FontFamily="Segoe UI" FontSize="12" BorderThickness="1" BorderBrush="LightGray" Background="White" Margin="0 10 0 0"></Button>
+            <Button x:Name="btn_save" Width="150" Height="45" Click="btn_save_Click" Content="Сохранить" Style="{StaticResource btn_style}" Margin="0 45 0 0"></Button>
+        </StackPanel>
+    </Grid>
+</Window>

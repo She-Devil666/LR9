@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище stationeryModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="basket">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_buyer" Type="int" Nullable="false" />
+    <Property Name="id_good" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="buyer">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_user" Type="int" Nullable="false" />
+    <Property Name="surname" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="phone" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="email" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="good">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="SKU" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="price" Type="int" Nullable="false" />
+    <Property Name="count" Type="int" Nullable="false" />
+    <Property Name="img" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="order">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_buyer" Type="int" Nullable="false" />
+    <Property Name="id_good" Type="int" Nullable="false" />
+    <Property Name="code" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="user">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="login" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="password" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="role" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_basket_buyer">
+    <End Role="buyer" Type="Self.buyer" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="basket" Type="Self.basket" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="buyer">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="basket">
+        <PropertyRef Name="id_buyer" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_basket_good">
+    <End Role="good" Type="Self.good" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="basket" Type="Self.basket" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="good">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="basket">
+        <PropertyRef Name="id_good" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_buyer_user">
+    <End Role="user" Type="Self.user" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="buyer" Type="Self.buyer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="user">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="buyer">
+        <PropertyRef Name="id_user" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_order_buyer">
+    <End Role="buyer" Type="Self.buyer" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="order" Type="Self.order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="buyer">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="order">
+        <PropertyRef Name="id_buyer" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_order_good">
+    <End Role="good" Type="Self.good" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="order" Type="Self.order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="good">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="order">
+        <PropertyRef Name="id_good" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Хранилище stationeryModelContainer">
+    <EntitySet Name="basket" EntityType="Self.basket" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="buyer" EntityType="Self.buyer" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="good" EntityType="Self.good" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="order" EntityType="Self.order" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="user" EntityType="Self.user" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_basket_buyer" Association="Self.FK_basket_buyer">
+      <End Role="buyer" EntitySet="buyer" />
+      <End Role="basket" EntitySet="basket" />
+    </AssociationSet>
+    <AssociationSet Name="FK_basket_good" Association="Self.FK_basket_good">
+      <End Role="good" EntitySet="good" />
+      <End Role="basket" EntitySet="basket" />
+    </AssociationSet>
+    <AssociationSet Name="FK_buyer_user" Association="Self.FK_buyer_user">
+      <End Role="user" EntitySet="user" />
+      <End Role="buyer" EntitySet="buyer" />
+    </AssociationSet>
+    <AssociationSet Name="FK_order_buyer" Association="Self.FK_order_buyer">
+      <End Role="buyer" EntitySet="buyer" />
+      <End Role="order" EntitySet="order" />
+    </AssociationSet>
+    <AssociationSet Name="FK_order_good" Association="Self.FK_order_good">
+      <End Role="good" EntitySet="good" />
+      <End Role="order" EntitySet="order" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

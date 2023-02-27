@@ -1,0 +1,46 @@
+﻿<Window x:Class="Stationery.Profile"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Stationery"
+        mc:Ignorable="d"
+        Title="Личный профиль" Height="400" Width="700" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="80"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="80"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Row="0" Grid.Column="1" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Left">
+            <StackPanel Orientation="Horizontal" Height="40">
+                <TextBlock Text="ZAKKA" Style="{StaticResource logo_style}" VerticalAlignment="Center"></TextBlock>
+                <Button x:Name="btn_shop" Click="btn_shop_Click" Content="Магазин" Style="{StaticResource nav_link_style}" Margin="40 0 0 0"></Button>
+                <Button x:Name="btn_basket" Click="btn_basket_Click" Content="Корзина" Style="{StaticResource nav_link_style}" Margin="20 0 0 0"></Button>
+                <Button x:Name="btn_profile" Content="Профиль" Style="{StaticResource nav_link_style}" Foreground="#b1f0eb" Margin="20 0 0 0"></Button>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Vertical">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0 30 0 30">
+                <TextBlock Text="{Binding name}" Style="{StaticResource headline_style}" FontSize="20"></TextBlock>
+                <TextBlock Text=" "></TextBlock>
+                <TextBlock Text="{Binding surname}" Style="{StaticResource headline_style}" FontSize="20"></TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0 0 0 10">
+                <TextBlock Text="Эл. почта: " Style="{StaticResource text_style}"></TextBlock>
+                <TextBlock Text="{Binding email}" Style="{StaticResource text_style}"></TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0 0 0 40">
+                <TextBlock Text="Номер телефона: " Style="{StaticResource text_style}"></TextBlock>
+                <TextBlock Text="{Binding phone}" Style="{StaticResource text_style}"></TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Left">
+                <Button x:Name="btn_exit" Style="{StaticResource lview_btn_style}" Content="Выйти из акканута" Width="160" Height="35" FontSize="13" FontWeight="Medium" Click="btn_exit_Click"></Button>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

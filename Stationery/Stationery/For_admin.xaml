@@ -1,0 +1,52 @@
+﻿<Window x:Class="Stationery.For_admin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Stationery"
+        mc:Ignorable="d" IsVisibleChanged="Window_IsVisibleChanged"
+         Title="Панель адмнистратора" Height="800" Width="1000" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"></RowDefinition>
+            <RowDefinition Height="70"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="150"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="100"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Row="0" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center">
+            <StackPanel Orientation="Horizontal" Height="50">
+                <TextBlock Text="ZAKKA" Style="{StaticResource logo_style}" VerticalAlignment="Center"></TextBlock>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.ColumnSpan="3" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Text="Админ-панель" Style="{StaticResource headline_style}" FontWeight="Light"></TextBlock>
+        </StackPanel>
+        <DataGrid x:Name="dgrid_goods" AutoGenerateColumns="False" IsReadOnly="True" Grid.Column="1" Grid.Row="2" SelectionMode="Single">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Наименование" Binding="{Binding name}" Width="250"></DataGridTextColumn>
+                <DataGridTextColumn Header="Кол-во" Binding="{Binding count}" Width="70"></DataGridTextColumn>
+                <DataGridTextColumn Header="Артикул" Binding="{Binding SKU}" Width="100"></DataGridTextColumn>
+                <DataGridTextColumn Header="Цена" Binding="{Binding price, StringFormat={}{0} Р}" Width="100"></DataGridTextColumn>
+                <DataGridTemplateColumn Width="110">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button x:Name="btn_edit" Click="btn_edit_Click" Content="Изменить" Background="#b1f0eb"></Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <StackPanel Grid.Row="3" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <Button x:Name="btn_add" Content="Добавить товар" Click="btn_add_Click" Style="{StaticResource btn_style}" Width="200" Height="50" Margin="0 30 0 0"></Button>
+            <Button x:Name="remove_add" Content="Удалить товары" Click="remove_add_Click" Style="{StaticResource btn_style}" Width="200" Height="50" Margin="20 30 0 0"></Button>
+        </StackPanel>
+        <StackPanel Grid.Row="0" Grid.Column="2" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button x:Name="btn_exit" Content="Выход" Click="btn_exit_Click" Style="{StaticResource nav_link_style}"></Button>
+        </StackPanel>
+    </Grid>
+</Window>

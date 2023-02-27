@@ -1,0 +1,46 @@
+﻿<Window x:Class="Stationery.Basket"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Stationery"
+        mc:Ignorable="d" IsVisibleChanged="Window_IsVisibleChanged"
+        Title="Корзина" Height="600" Width="900"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="60"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="80"></ColumnDefinition>
+            <ColumnDefinition Width="450"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="80"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Left">
+            <StackPanel Orientation="Horizontal" Height="40">
+                <TextBlock Text="ZAKKA" Style="{StaticResource logo_style}" VerticalAlignment="Center"></TextBlock>
+                <Button x:Name="btn_shop" Click="btn_shop_Click" Content="Магазин" Style="{StaticResource nav_link_style}" Margin="40 0 0 0"></Button>
+                <Button x:Name="btn_basket" Content="Корзина" Style="{StaticResource nav_link_style}" Foreground="#b1f0eb" Margin="20 0 0 0"></Button>
+                <Button x:Name="btn_profile" Click="btn_profile_Click" Content="Профиль" Style="{StaticResource nav_link_style}" Margin="20 0 0 0"></Button>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Vertical" HorizontalAlignment="Left">
+            <TextBlock x:Name="tblock_headline" Text="Корзина" Style="{StaticResource headline_style}" FontSize="17" Margin="0 20 0 20"></TextBlock>
+            <ListBox x:Name="lbox_basket" Width="400" Height="300" Style="{StaticResource lbox_style}"></ListBox>
+            <Button x:Name="btn_remove_basket_position" Content="Удалить товар из корзины" Style="{StaticResource nav_link_style}" Width="300" Margin="0 13 0 0" Click="btn_remove_basket_position_Click"></Button>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="2" Orientation="Vertical" HorizontalAlignment="Left">
+            <TextBlock x:Name="tblock_totaly_price" Text="Итого: " Style="{StaticResource headline_style}" FontSize="17" Margin="0 55 0 50"></TextBlock>
+            <TextBlock Text="Номер банковской карты" Style="{StaticResource text_style}" Margin="0 0 0 10"></TextBlock>
+            <TextBox x:Name="tbox_num_card" Style="{StaticResource text_field_style}" Width="200" Margin="0 0 0 10"></TextBox>
+            <TextBlock Text="Срок службы" Style="{StaticResource text_style}" Margin="0 0 0 10"></TextBlock>
+            <TextBox x:Name="tbox_date_card" Style="{StaticResource text_field_style}" Width="200" Margin="0 0 0 10"></TextBox>
+            <TextBlock Text="CVC" Style="{StaticResource text_style}" Margin="0 0 0 10"></TextBlock>
+            <PasswordBox x:Name="tbox_cvc_card" Style="{StaticResource pass_field_style}" Width="200" Margin="0 0 0 41"></PasswordBox>
+            <Button x:Name="btn_buy" Style="{StaticResource lview_btn_style}" Width="200" Height="35" Content="Оплатить" Click="btn_buy_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
